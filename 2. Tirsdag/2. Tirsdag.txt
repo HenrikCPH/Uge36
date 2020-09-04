@@ -1,0 +1,62 @@
+What is your public IP address right now, and how did you find it?
+IPv4 Address: 192.168.0.165 fundet via cmd, ipconfig.
+
+What is your private IP address right now (do this both at home and in school), and who/what gave you that address?
+IPv4 Address: 192.168.0.165 den lokale router gav ip adressen.
+
+What’s special about these address ranges?
+10.0.0.0 – 10.255.255.255
+172.16.0.0 – 172.31.255.255 
+192.168.0.0 – 192.168.255.255
+Disse ip adresser bruges til lokale kommunikationer imellem det private netværk.
+
+What’s special about this ip-address: 127.0.0.1?
+Denne ip bruges til at få adgang til det lokale netværk og de ting der er på netværket. (localhost)
+
+What kind of service would you expect to find on a server using these ports: 22, 23, 25, 53, 80, 443?
+22: (SSH) Sikkert login (Secure Shell)
+23: Sender data via ikke crypteret tekst beskeder. (Telnet)
+25: E-mails.
+53: Domain Name Systen (DNS) - DNS oversætter ip adresser til domæne navne.
+80: Internettet HTTP (World Wide Web) 
+443: Internettet HTTPS - brugt til sikker kommunikation. (World Wide Web)
+
+What is the IP address of studypoints.info and how did you find it?
+cmd, tracert - 157.230.21.145
+
+If you write https://studypoints.info in your browser, how did “it” figure out that it should go to the IP address you discovered above?
+Via en DNS server.
+
+Explain shortly the purpose of an ip-address and a port-number and why we need both?
+Ip adressen: Formålet ved en ip adresse er at håndterer forbindelser imellem enheder og en destinations side (Altså et Website).
+Ip adressen er identifiseret unikt for alle enheder på internettet og uden en, er der ikke nogen måde at få kontakt til hinanden på.
+(Hvis man ikke har en ip adresse, kan man ikke kommunikere med nogen).
+Port-nummer: Formålet ved et port-nummer er at identifiserer hvilken måde informationen skal leveres.
+
+What is your (nearest) DNS server,?
+Man kan finde ud af hvilke DNS server, ved at bruge de tilgængelige programmer.
+
+What is (conceptually) the DNS system and the purpose with a DNS Server?
+DNS er internettets tlf. bog. DNS oversætter domæne navne til ip adresser, så browseren kan få den information den skal bruge.
+
+What is your current Gateway, and how did you find it?
+192.168.0.1: Fundet i detaljer om forbindelser, via netværk og internet.
+
+What is the address of your current DHCP-Server, and how did you find it?
+192.168.0.1: cmd, ipconfig/all. Eller i detaljer om forbindelser, via netværk og internet.
+
+Explain about the TCP/IP-protocol stack
+TCP/IP: Giver data fra end-to-end, omformulere hvor dataen skal pakkes, se ud, lyde, adresseres, visses og modtages.
+Det fundamentale setup er 4 lager, som klassefiserer div. protocoler alt afhængig af størrelsen på netværket. 
+Link layer: Indeholder kommunikations metoder af data som er i et segment (link).
+Internet layer: Giver internetværk, hvilket betyder at den får de involdveret netværk til at arbejde sammen.
+Transport layer: Håndterer kommunikationen imellem de involdveret netværk.
+Application layer: Håndterer data veksling imellem processerne på de involdveret netværk.
+
+Explain about the HTTP Protocol
+HTTP: Bruges til at loade web sider, ved hjælp af tekst links. HTTP, er application layer, dette vil sige at det er lavet til at sende
+og modtage information imellem netværk enheder.
+
+Explain (conceptually) how HTTP and TCP/IP are connected (what can HTTP do, and where does it fit into TCP/IP)
+HTTP bruges til at sende daten til div. server og klienter, TCP bruges til at overfører de ønskede data sikkert og 
+ip adressen bruges til at få netværkne til at arbejde sammen.
